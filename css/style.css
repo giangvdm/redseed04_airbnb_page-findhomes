@@ -1,4 +1,61 @@
+/* ****
+Reset 
+**** */
+p {
+    margin: 0;
+}
+
+/* ****
+Main styling
+**** */
+
 .component__img {
     width: 100%;
     height: auto;
+    border-radius: 3px;
+}
+
+.component__info {
+    padding-top: 10px;
+}
+
+.component__info > * {
+    line-height: 1.5em;
+}
+
+.component__info > *:not(:first-child) {
+    margin-top: 2px;
+}
+
+.info__detail {
+    text-transform: uppercase;
+}
+
+.info__name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.rating__star-list {
+    display: inline;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.rating__star-list > li {
+    display: inline;
+    color: rgb(0, 132, 137);
+}
+
+/* ****
+Custom Responsive
+**** */
+
+@media screen and (max-width: 991px) {
+    [class*="col-"] {
+        margin-top: 30px;
+    }
 }
