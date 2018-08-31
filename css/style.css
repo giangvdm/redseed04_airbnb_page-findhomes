@@ -9,21 +9,21 @@ p {
 Main styling
 **** */
 
-.component__img {
+.home-item__image {
     width: 100%;
     height: auto;
     border-radius: 3px;
 }
 
-.component__info {
+.home-item__info {
     padding-top: 10px;
 }
 
-.component__info > * {
+.home-item__info > * {
     line-height: 1.5em;
 }
 
-.component__info > *:not(:first-child) {
+.home-item__info > *:not(:first-child) {
     margin-top: 2px;
 }
 
