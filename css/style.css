@@ -1,61 +1,89 @@
-/* ****
-Reset 
-**** */
 p {
-    margin: 0;
+  margin: 0;
 }
 
-/* ****
-Main styling
-**** */
+img {
+  width: 100%;
+  height: auto;
+}
+
+.post__star-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 12px auto;
+}
+.post__star-list li {
+  display: inline;
+}
+.post__review-content {
+  margin: 12px auto;
+}
+
+.author__avatar {
+  display: inline-block;
+  width: 50px;
+  height: auto;
+}
+.author__detail {
+  display: inline-block;
+  margin-left: 12px;
+  vertical-align: top;
+}
+.author [class*=detail__] {
+  margin: 0;
+  line-height: 1.5em;
+}
+.author__name {
+  font-weight: bold;
+  line-height: 1.5em;
+}
+.author__country {
+  line-height: 1.2em;
+}
 
 .home-item__image {
-    width: 100%;
-    height: auto;
-    border-radius: 3px;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
 }
-
 .home-item__info {
-    padding-top: 10px;
+  padding-top: 10px;
 }
-
 .home-item__info > * {
-    line-height: 1.5em;
+  line-height: 1.5em;
 }
-
 .home-item__info > *:not(:first-child) {
-    margin-top: 2px;
+  margin-top: 2px;
 }
 
 .info__detail {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 .info__name {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-    text-transform: capitalize;
-    margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin: 0;
 }
 
 .rating__star-list {
-    display: inline;
-    list-style-type: none;
-    padding-left: 0;
+  display: inline;
+  list-style-type: none;
+  padding-left: 0;
 }
-
 .rating__star-list > li {
-    display: inline;
-    color: rgb(0, 132, 137);
+  display: inline;
+  color: "rgb(0, 132, 137)";
 }
 
 /* ****
 Custom Responsive
 **** */
-
 @media screen and (max-width: 991px) {
-    [class*="col-"] {
-        margin-top: 30px;
-    }
+  [class*=col-] {
+    margin-top: 30px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

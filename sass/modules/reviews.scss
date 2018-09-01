@@ -1,0 +1,51 @@
+@import '../partials/variables';
+
+// .reviews__container {
+
+// }
+
+.post {
+
+    &__star-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 12px auto;
+
+        li {
+            display: inline;
+        }
+    }
+
+    &__review-content {
+        margin: 12px auto;
+    }
+}
+
+.author {
+
+    &__avatar {
+        display: inline-block;
+        width: 50px;
+        height: auto;
+    }
+
+    &__detail {
+        display: inline-block;
+        margin-left: 12px;
+        vertical-align: top;
+    }
+
+    [class*="detail__"] {
+        margin: 0;
+        line-height: 1.5em;
+    }
+
+    &__name {
+        font-weight: bold;
+        line-height: 1.5em;
+    }
+
+    &__country {
+        line-height: 1.2em;
+    }
+}
