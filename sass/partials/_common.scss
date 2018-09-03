@@ -1,0 +1,15 @@
+.section {
+
+    // margin-top: 12px;
+    // margin-bottom: 12px;
+    padding: 24px 0;
+
+    &__title {
+        margin: 12px 0 6px;
+    }
+
+    &__description {
+        font-size: 16px;
+        margin: 6px 0 12px;
+    }
+}

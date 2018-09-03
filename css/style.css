@@ -7,6 +7,37 @@ img {
   height: auto;
 }
 
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+button {
+  outline: none;
+}
+
+.section {
+  padding: 24px 0;
+}
+.section__title {
+  margin: 12px 0 6px;
+}
+.section__description {
+  font-size: 16px;
+  margin: 6px 0 12px;
+}
+
 .post__star-list {
   list-style-type: none;
   padding-left: 0;
@@ -39,6 +70,25 @@ img {
 }
 .author__country {
   line-height: 1.2em;
+}
+
+.features__container {
+  padding: 24px 0;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.feature-item__icon {
+  font-size: 52px;
+  color: #008489;
+}
+.feature-item__description {
+  margin: 12px 24px 0 0;
+}
+
+.description__title {
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .home-item__image {
@@ -74,7 +124,9 @@ img {
 }
 .rating__star-list > li {
   display: inline;
-  color: "rgb(0, 132, 137)";
+}
+.rating__star-list > li span {
+  color: #008489;
 }
 
 /* ****
@@ -84,6 +136,18 @@ Custom Responsive
   [class*=col-] {
     margin-top: 30px;
   }
+}
+.add-travel-date__button {
+  outline: none;
+  background-color: #008489;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 24px;
+  /* Override Bootstrap */
+}
+.add-travel-date__button:hover {
+  color: #fff !important;
 }
 
 /*# sourceMappingURL=style.css.map */

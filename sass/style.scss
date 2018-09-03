@@ -1,4 +1,7 @@
-@import 'partials/_reset.scss';
+@import 'partials/base';
+@import 'partials/common';
 
-@import 'modules/reviews.scss';
-@import 'modules/homeslist.scss';
+@import 'modules/reviews';
+@import 'modules/features';
+@import 'modules/homeslist';
+@import 'modules/addtraveldate';

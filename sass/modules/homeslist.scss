@@ -53,7 +53,10 @@
 
         > li {
             display: inline;
-            color: $teal;
+            
+            span {
+                color: $color-teal;
+            }
         }
     }
 }

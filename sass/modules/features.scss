@@ -1,0 +1,29 @@
+@import '../partials/variables';
+
+.features__container {
+    padding: 24px 0;
+    border-top: 1px solid $color-gray;
+    border-bottom: 1px solid $color-gray;
+}
+
+.feature-item {
+
+    &__icon {
+        font-size: 52px;
+        color: $color-teal;
+    }
+
+    &__description {
+        margin: 12px 24px 0 0;
+    }
+
+}
+
+.description {
+
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+
