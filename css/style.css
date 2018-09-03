@@ -7,6 +7,15 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:focus, a:visited {
+  color: inherit;
+}
+
 h1, h2, h3 {
   font-weight: 700;
 }
@@ -27,6 +36,8 @@ button {
   outline: none;
 }
 
+/* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
+/* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
 .section {
   padding: 24px 0;
 }
@@ -37,14 +48,26 @@ button {
   font-size: 16px;
   margin: 6px 0 12px;
 }
+@media screen and (max-width: 767px) {
+  .section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
 
-.post__star-list {
+ul[class$=list] {
   list-style-type: none;
   padding-left: 0;
+}
+ul.horizontal-list > li {
+  display: inline-block;
+}
+
+.post__star-list {
   margin: 12px auto;
 }
-.post__star-list li {
-  display: inline;
+.post__star-list > li > i {
+  color: #008489;
 }
 .post__review-content {
   margin: 12px auto;
@@ -72,10 +95,26 @@ button {
   line-height: 1.2em;
 }
 
+.detail__name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
 .features__container {
   padding: 24px 0;
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
+}
+@media screen and (max-width: 767px) {
+  .features__container {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features__feature-item {
+    text-align: center;
+  }
 }
 
 .feature-item__icon {
@@ -84,6 +123,11 @@ button {
 }
 .feature-item__description {
   margin: 12px 24px 0 0;
+}
+@media screen and (max-width: 767px) {
+  .feature-item__description {
+    margin-right: 0;
+  }
 }
 
 .description__title {
@@ -119,13 +163,8 @@ button {
 
 .rating__star-list {
   display: inline;
-  list-style-type: none;
-  padding-left: 0;
 }
-.rating__star-list > li {
-  display: inline;
-}
-.rating__star-list > li span {
+.rating__star-list > li > i {
   color: #008489;
 }
 
@@ -137,6 +176,10 @@ Custom Responsive
     margin-top: 30px;
   }
 }
+#add-travel-date {
+  padding-bottom: 64px;
+}
+
 .add-travel-date__button {
   outline: none;
   background-color: #008489;
@@ -148,6 +191,74 @@ Custom Responsive
 }
 .add-travel-date__button:hover {
   color: #fff !important;
+}
+
+/* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
+/* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
+.footer {
+  border-top: 1px solid #ebebeb;
+  padding: 64px 0 48px;
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 36px 24px 12px;
+  }
+}
+.footer__wrapper--1 {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ebebeb;
+}
+@media screen and (max-width: 767px) {
+  .footer__wrapper--1 {
+    display: none;
+  }
+}
+
+.footer-list__title {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.footer-list__list > li {
+  color: #767676;
+  line-height: 1.5em;
+}
+
+.list__label--new {
+  display: inline-block;
+  font-size: 13px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #008489;
+  border-radius: 5px;
+  padding: 0 4px;
+  margin-left: 4px;
+}
+
+.social-link-list__item {
+  font-size: 20px;
+  margin: 0 6px;
+  color: #767676;
+}
+.social-link-list__item:first-child {
+  margin-left: 0;
+}
+.social-link-list__item:last-child {
+  margin-right: 0;
+}
+
+.footer__wrapper--2 {
+  padding-top: 12px;
+}
+.footer__wrapper--2 .company-info__logo, .footer__wrapper--2 .company-info__name {
+  display: inline-block !important;
+}
+.footer__wrapper--2 .company-info, .footer__wrapper--2 .page-settings {
+  width: 45%;
+  display: inline-block;
+}
+.footer__wrapper--2 .page-settings {
+  text-align: right;
+  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */

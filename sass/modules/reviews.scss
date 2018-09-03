@@ -7,12 +7,10 @@
 .post {
 
     &__star-list {
-        list-style-type: none;
-        padding-left: 0;
         margin: 12px auto;
 
-        li {
-            display: inline;
+        > li > i {
+            color: $color-teal;
         }
     }
 
@@ -47,5 +45,13 @@
 
     &__country {
         line-height: 1.2em;
+    }
+}
+
+.detail {
+
+    &__name {
+        font-weight: bold;
+        font-size: 16px;
     }
 }

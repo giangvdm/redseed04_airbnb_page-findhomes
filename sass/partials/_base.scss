@@ -7,6 +7,15 @@ img {
     height: auto;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, a:focus, a:visited {
+    color: inherit;
+}
+
 h1, h2, h3 {
     font-weight: 700;
 }

@@ -2,8 +2,22 @@
 
 .features__container {
     padding: 24px 0;
-    border-top: 1px solid $color-gray;
-    border-bottom: 1px solid $color-gray;
+    border-top: $standard-border;
+    border-bottom: $standard-border;
+
+    @include xs {
+        padding-top: 0;
+    }
+}
+
+.features {
+
+    &__feature-item {
+
+        @include xs {
+            text-align: center;
+        }
+    }
 }
 
 .feature-item {
@@ -15,6 +29,10 @@
 
     &__description {
         margin: 12px 24px 0 0;
+
+        @include xs {
+            margin-right: 0;
+        }
     }
 
 }
