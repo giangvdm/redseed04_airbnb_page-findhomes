@@ -18,15 +18,16 @@ a:visited {
     color: inherit;
 }
 
-input, select {
-    outline: none;
-}
-
-input[type="submit"], button {
+input, select, button {
     outline: none;
     border: none;
-    background-color: inherit;
 }
+
+// input[type="submit"], button {
+//     outline: none;
+//     border: none;
+//     background-color: inherit;
+// }
 
 h1,
 h2,

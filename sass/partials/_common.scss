@@ -30,11 +30,34 @@ ul {
         padding-left: 0;
     }
 
-    &.horizontal-list {
+    &.common__horizontal-list {
         >li {
             display: inline-block;
         }
     }
 
-    // &.vertical-list {}
+    // &.common__vertical-list {}
+}
+
+[class$="-only"] {
+    display: none;
+}
+
+.common__md-only {
+
+    @include md {
+        display: block;
+    }
+}
+
+.common__sm-only {
+    @include sm {
+        display: block;
+    }
+}
+
+.common__xs-only {
+    @include xs {
+        display: block;
+    }
 }

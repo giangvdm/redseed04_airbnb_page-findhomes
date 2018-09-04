@@ -18,14 +18,9 @@ a:visited {
   color: inherit;
 }
 
-input, select {
-  outline: none;
-}
-
-input[type=submit], button {
+input, select, button {
   outline: none;
   border: none;
-  background-color: inherit;
 }
 
 h1,
@@ -52,6 +47,7 @@ button {
 
 /* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
 /* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
+/* Medium devices >= 992px, equivalent to Bootstrap col-md */
 .container {
   padding: 0;
 }
@@ -77,20 +73,90 @@ ul[class$=list] {
   list-style-type: none;
   padding-left: 0;
 }
-ul.horizontal-list > li {
+ul.common__horizontal-list > li {
   display: inline-block;
+}
+
+[class$=-only] {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .common__md-only {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .common__sm-only {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .common__xs-only {
+    display: block;
+  }
 }
 
 /* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
 /* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
+/* Medium devices >= 992px, equivalent to Bootstrap col-md */
 #head-form {
   background-image: url("../../assets/images/header.jpg");
+  background-size: cover;
+  padding: 64px 0;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #head-form {
+    background-image: none;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  #head-form {
+    background-image: none;
+    padding: 0;
+  }
+}
+#head-form .sm-background {
+  padding: 24px 0 12px 12px;
+  min-height: 72px;
+  color: #fff !important;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #head-form .sm-background {
+    background-image: url("../../assets/images/header-small.jpg");
+  }
+}
+@media screen and (max-width: 767px) {
+  #head-form .sm-background {
+    background-image: url("../../assets/images/header-small.jpg");
+  }
 }
 
-#main-form {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .head-form__outter-container {
+    width: 100%;
+    margin: 0 !important;
+  }
+}
+
+.form {
   background-color: #fff;
   border-radius: 5px;
   padding: 24px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .form {
+    border-radius: 0 !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form {
+    border-radius: 0 !important;
+  }
 }
 
 .form__title {
@@ -101,22 +167,32 @@ ul.horizontal-list > li {
 }
 .form__submit-button {
   width: 100%;
-  background-color: #FF5A5F !important;
+  background-color: #FF5A5F;
   color: #fff;
   font-weight: bold;
   font-size: 16px;
   padding: 12px 0;
   border-radius: 4px;
   margin-top: 36px;
+  transition: background 0.2s;
+}
+.form__submit-button:focus {
+  background-color: #ff4146;
 }
 
 .form__input-div {
   display: inline-block;
 }
-.form__input-div input {
+.form__input-div input, .form__input-div select {
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
   font-size: 16px;
-  padding: 6px 6px;
+  padding: 12px 12px;
   width: 100%;
+  transition: border 0.2s;
+}
+.form__input-div input:focus, .form__input-div select:focus {
+  border: 1px solid #008489;
 }
 .form__input-div--full-width {
   width: 100%;
@@ -125,7 +201,7 @@ ul.horizontal-list > li {
   width: 49%;
 }
 .form__input-div--half-width:nth-child(odd) {
-  margin-left: 1.2%;
+  margin-left: 1.05%;
 }
 
 .input-div__label {
@@ -138,6 +214,7 @@ ul.horizontal-list > li {
 
 /* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
 /* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
+/* Medium devices >= 992px, equivalent to Bootstrap col-md */
 .post__star-list {
   margin: 12px auto;
 }
@@ -177,6 +254,7 @@ ul.horizontal-list > li {
 
 /* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
 /* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
+/* Medium devices >= 992px, equivalent to Bootstrap col-md */
 .features__container {
   padding: 24px 0;
   border-top: 1px solid #ebebeb;
@@ -214,6 +292,7 @@ ul.horizontal-list > li {
 
 /* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
 /* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
+/* Medium devices >= 992px, equivalent to Bootstrap col-md */
 .home-item__image {
   width: 100%;
   height: auto;
@@ -274,6 +353,7 @@ Custom Responsive
 
 /* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
 /* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
+/* Medium devices >= 992px, equivalent to Bootstrap col-md */
 .footer {
   border-top: 1px solid #ebebeb;
   padding: 64px 0 48px;

@@ -13,3 +13,11 @@
 
     }
 }
+
+/* Medium devices >= 992px, equivalent to Bootstrap col-md */
+@mixin md {
+    @media screen and (min-width: 992px) {
+        @content;
+
+    }
+}
