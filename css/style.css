@@ -12,11 +12,25 @@ a {
   color: inherit;
 }
 
-a:hover, a:focus, a:visited {
+a:hover,
+a:focus,
+a:visited {
   color: inherit;
 }
 
-h1, h2, h3 {
+input, select {
+  outline: none;
+}
+
+input[type=submit], button {
+  outline: none;
+  border: none;
+  background-color: inherit;
+}
+
+h1,
+h2,
+h3 {
   font-weight: 700;
 }
 
@@ -38,6 +52,10 @@ button {
 
 /* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
 /* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
+.container {
+  padding: 0;
+}
+
 .section {
   padding: 24px 0;
 }
@@ -63,6 +81,63 @@ ul.horizontal-list > li {
   display: inline-block;
 }
 
+/* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
+/* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
+#head-form {
+  background-image: url("../../assets/images/header.jpg");
+}
+
+#main-form {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 24px;
+}
+
+.form__title {
+  margin: 0 0 12px;
+}
+.form__description {
+  font-size: 18px;
+}
+.form__submit-button {
+  width: 100%;
+  background-color: #FF5A5F !important;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px 0;
+  border-radius: 4px;
+  margin-top: 36px;
+}
+
+.form__input-div {
+  display: inline-block;
+}
+.form__input-div input {
+  font-size: 16px;
+  padding: 6px 6px;
+  width: 100%;
+}
+.form__input-div--full-width {
+  width: 100%;
+}
+.form__input-div--half-width {
+  width: 49%;
+}
+.form__input-div--half-width:nth-child(odd) {
+  margin-left: 1.2%;
+}
+
+.input-div__label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+
+/* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
+/* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
 .post__star-list {
   margin: 12px auto;
 }
@@ -100,6 +175,8 @@ ul.horizontal-list > li {
   font-size: 16px;
 }
 
+/* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
+/* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
 .features__container {
   padding: 24px 0;
   border-top: 1px solid #ebebeb;
@@ -135,6 +212,8 @@ ul.horizontal-list > li {
   font-size: 16px;
 }
 
+/* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
+/* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
 .home-item__image {
   width: 100%;
   height: auto;

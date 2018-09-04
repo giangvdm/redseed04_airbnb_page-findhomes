@@ -12,11 +12,25 @@ a {
     color: inherit;
 }
 
-a:hover, a:focus, a:visited {
+a:hover,
+a:focus,
+a:visited {
     color: inherit;
 }
 
-h1, h2, h3 {
+input, select {
+    outline: none;
+}
+
+input[type="submit"], button {
+    outline: none;
+    border: none;
+    background-color: inherit;
+}
+
+h1,
+h2,
+h3 {
     font-weight: 700;
 }
 
