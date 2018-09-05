@@ -1,3 +1,6 @@
+/* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
+/* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
+/* Medium devices >= 992px, equivalent to Bootstrap col-md */
 p {
   margin: 0;
 }
@@ -99,9 +102,6 @@ ul.common__horizontal-list > li {
   }
 }
 
-/* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
-/* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
-/* Medium devices >= 992px, equivalent to Bootstrap col-md */
 #head-form {
   background-image: url("../../assets/images/header.jpg");
   background-size: cover;
@@ -212,9 +212,6 @@ ul.common__horizontal-list > li {
   margin-bottom: 6px;
 }
 
-/* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
-/* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
-/* Medium devices >= 992px, equivalent to Bootstrap col-md */
 .post__star-list {
   margin: 12px auto;
 }
@@ -252,9 +249,6 @@ ul.common__horizontal-list > li {
   font-size: 16px;
 }
 
-/* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
-/* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
-/* Medium devices >= 992px, equivalent to Bootstrap col-md */
 .features__container {
   padding: 24px 0;
   border-top: 1px solid #ebebeb;
@@ -290,9 +284,6 @@ ul.common__horizontal-list > li {
   font-size: 16px;
 }
 
-/* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
-/* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
-/* Medium devices >= 992px, equivalent to Bootstrap col-md */
 .home-item__image {
   width: 100%;
   height: auto;
@@ -351,9 +342,6 @@ Custom Responsive
   color: #fff !important;
 }
 
-/* Extra-small devices < 768px, equivalent to Bootstrap col-xs */
-/* Small devices >= 768px and < 992px, equivalent to Bootstrap col-sm */
-/* Medium devices >= 992px, equivalent to Bootstrap col-md */
 .footer {
   border-top: 1px solid #ebebeb;
   padding: 64px 0 48px;
